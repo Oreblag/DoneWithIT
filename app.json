@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "TestApp",
+    "slug": "TestApp",
+    "version": "1.0.0",
+    "orientation": "default",
+    "icon": "./app/assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./app/assets/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#e63c4b"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.oreblag.TestApp",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./app/assets/splash.png",
+        "backgroundColor": "#e63c4b"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.oreblag.TestApp"
+    },
+    "web": {
+      "favicon": "./app/assets/favicon.png"
+    },
+    "plugins": [
+      "expo-secure-store",
+      "@bugsnag/plugin-expo-eas-sourcemaps",
+      [
+      "react-native-google-mobile-ads",
+      {
+        "androidAppId": "ca-app-pub-5237584635684225~1210091849"
+      }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "bd6b79a6-6170-4d4a-a05d-633bd5c3e1c0"
+      },
+      "bugsnag": {
+        "apiKey": "1dd4420902216a4c30f5f0fe35a5bad3"
+      }
+    }
+  }
+}
